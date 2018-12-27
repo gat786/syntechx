@@ -65,26 +65,31 @@
                     android:orientation="vertical">
 
                     <android.support.v7.widget.CardView
+                        android:layout_margin="5dp"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="8dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:cardElevation="2dp">
-
-                        <TextView
-                            android:id="@+id/committee_position"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Committee Heads"
-                            android:textAlignment="center"
-                            android:textColor="@color/contentblack"
-                            android:textSize="26sp"
-                            android:textStyle="bold" />
-                    </android.support.v7.widget.CardView>
+                            android:layout_height="wrap_content">
 
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:cardElevation="4dp"
-                        app:cardUseCompatPadding="true">
+
+
+                            <TextView
+                                android:id="@+id/committee_position"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Committee Heads"
+                                android:textAlignment="center"
+                                android:padding="4dp"
+                                android:layout_margin="4dp"
+                                android:textColor="@color/contentblack"
+                                android:textSize="24sp"
+                                android:layout_gravity="center_horizontal"
+                                />
+
 
                         <android.support.constraint.ConstraintLayout
                             android:id="@+id/commitee_constrain"
@@ -113,6 +118,8 @@
 
                             </android.support.v7.widget.RecyclerView>
                         </android.support.constraint.ConstraintLayout>
+                        </LinearLayout>
+
                     </android.support.v7.widget.CardView>
                 </LinearLayout>
             </android.support.v4.widget.NestedScrollView>

@@ -28,11 +28,11 @@
 
             <ImageView
                 android:id="@+id/display"
-                android:background="@android:color/white"
                 android:layout_width="match_parent"
-                android:padding="5dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:background="@android:color/white"
+                android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_background"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
